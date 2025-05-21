@@ -39,27 +39,31 @@
 		<script src="./assets/scripts.js"></script>
 
 	<!-- schema.org -->
-		<script type="application/ld+json"> 
+		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
 				"@type": "Person",
 				"name": "Nina Carducci",
 				"jobTitle": "Photographe",
-				"gender": "Female",
-  				"description": "Photographe professionnelle à Bordeaux, spécialisée dans les portraits, événements et photos corporate.",
+				"gender": "https://schema.org/Female",
+				"description": "Photographe professionnelle à Bordeaux, spécialisée dans les portraits, événements et photos corporate.",
 				"knowsLanguage": "fr",
+				"telephone": "+33556677889",
+				"image": "https://sazh-1987.github.io/P8-OC-INTWEB/assets/images/nina.webp",
+				"url": "https://sazh-1987.github.io/P8-OC-INTWEB/",
+				"sameAs": [
+					"https://www.instagram.com/nina.carducci"
+				],
 				"address": {
 					"@type": "PostalAddress",
 					"streetAddress": "68 avenue Alsace-Lorraine",
 					"addressLocality": "Bordeaux",
 					"postalCode": "33200",
-					"addressCountry": "FR"
-			},
-				"telephone": "+33556677889",
-				"image": "https://sazh-1987.github.io/P8-OC-INTWEB/assets/images/nina.webp",
-				"openingHours": "lun-ven 10:00-19:00",
-				"url": "https://sazh-1987.github.io/P8-OC-INTWEB/",
-				"sameAs": ["https://www.instagram.com/nina.carducci"]
+					"addressCountry": {
+						"@type": "Country",
+						"name": "FR"
+					}
+				}
 			}
 		</script>
 	<!-- // -->
@@ -216,7 +220,7 @@
 					</div>
 				</div>
 
-			<!-- schema.org -->
+			<!-- rich snippet -->
 				<section itemscope itemtype="https://schema.org/LocalBusiness" style="display: none">
 					<h2 itemprop="name">Nina Carducci Photographe Professionnel</h2>
 
@@ -230,7 +234,8 @@
 						<p>
 							<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span><br>
 							<span itemprop="postalCode">33200</span> 
-							<span itemprop="addressLocality">Bordeaux</span>, 
+							<span itemprop="addressLocality">Bordeaux</span>
+							<span itemprop=”addressRegion”>Nouvelle-Aquitaine</span>
 							<span itemprop="addressCountry">FR</span>
 						</p>
 					</div>
