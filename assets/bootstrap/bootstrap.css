@@ -5966,6 +5966,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  background-color: #000000;
 }
 
 .carousel.pointer-event {
